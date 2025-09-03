@@ -1,0 +1,15 @@
+#main sets
+
+#ignore all
+*
+
+#unignore all files in sub folder with extension
+!*/
+
+#unignore all whith extension 'py'
+#!*.py
+
+
+#temp files.
+
+test.py
