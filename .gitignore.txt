@@ -7,7 +7,7 @@
 !*/
 
 #unignore all whith extension 'py'
-#!*.py
+!*.py
 
 
 #temp files.
