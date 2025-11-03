@@ -1,8 +1,10 @@
-try:
-    num = int(input('input integer='))
-    print(num)
 
-except IndexError:
-    print('you doesnt integer')
+from random import *
+a = [chr(k) for k in range(5)]
 
-print('end')
+b = [chr(l).join(a) for l in range(6,10)]
+print(ord('F'))
+
+
+
+
