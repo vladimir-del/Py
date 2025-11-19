@@ -1,10 +1,18 @@
 
-from random import *
-a = [chr(k) for k in range(5)]
+def timark(f):
+    
+    import time
 
-b = [chr(l).join(a) for l in range(6,10)]
-print(ord('F'))
+    def wrap():
+        start = time.time()
+        f()
+        end = time.time()
+        print('time = {}'.format(end - start))
+    return wrap
 
+@timark
+def req():
+    import requests
+    wep = requests.get('http://ya.ru')
 
-
-
+req()
