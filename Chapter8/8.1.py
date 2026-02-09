@@ -11,7 +11,7 @@ class my:
     
     """
 
-    par3 = 'ddd'
+    __par3 = 'ddd'
     def __init__(self, n1, n2):
         self.par1 = n1
         self.par2 = n2
@@ -28,3 +28,8 @@ my.show(a)
 print('------------------------')
 my('ccc', 'hhhh').show()
 print('------------------------')
+
+my.db = 'str'
+
+print(my.db)
+print(a.__dict__)
